@@ -1,0 +1,44 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+header{
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(/images/BgImg.png);
+}
+nav{
+    padding-top: 58px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: white;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    margin: auto 0;
+    padding: 0;
+}
+
+.nav__item{
+    margin-right: 20px;
+    text-transform:uppercase ;
+}
+
+.nav_lang-switch{
+    display: flex;
+}
+
+.switch__item{
+    margin-right: 10px;
+}
+
+.switch-text{
+    margin: auto;
+}

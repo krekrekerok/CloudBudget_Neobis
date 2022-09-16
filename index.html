@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudBudget-Freebie</title>
-    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-        <nav class="nav">
-                <img class="nav__logo" src="/images/logo.svg" alt="logo">
+            <nav class="nav">
+                <a href="#" class="nav__logo">
+                    <img class="nav__logo" src="/images/logo.svg" alt="logo">
+                </a>
 
                 <ul class="nav__list">
-                    <li class="nav__item nav__item_state_active">Overview</li>
-                    <li class="nav__item">Features</li>
-                    <li class="nav__item">Technology</li>
-                    <li class="nav__item">Contact</li>
-                    <li class="nav__item">Sign up</li>
+                    <li>
+                        <a href="#overview" class="nav__item nav__item_state_active">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features" class="nav__item">
+                            Features
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#technology" class="nav__item">
+                            Technology
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__item">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#signup" class="nav__item">
+                            Sign up
+                        </a>
+                    </li>
                 </ul>
 
-                <div class="nav_lang-switch">
+                <div class="nav_btn-switch">
                     <img class="switch__item" src="/images/Flag.svg" alt="En Flag">
-                    <p class="switch__item switch-text">EN</p>
+                    <p class="switch__item switch-text">en</p>
                     <img src="/images/Arrow.svg" alt="Arrow" class="switch__item">
                 </div>
-                <button class="login">Login</button>
+
+                <button class="nav__btn-login">Login</button>
+
             </nav>
+            <section class="hero">
+                <h1 class="hero__name">CloudBudget</h1>
+                <h3 class="hero__desc">
+                    Cloud budget management for everyone. Only <br/> €69.95 a Month After a 7 Day Trial of<br/>
+                    Up to €4.99
+                </h3>
+                <button class="hero__btn">Sign up</button>
+            </section>
         </div>
     </header>
-    
+    <main>
+        <div class="container">
+            <section class="overview">
+                <article class="overview__left">
+                    <h1 class="overview__left-name">
+                        Easy to Use Cloud Budget Management Software
+                    </h1>
+                    <p class="overview__left-decs">
+                        Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.
+                    </p>
+                    <a href="#" class="overview__left-link">Learn More</a>
+                </article>
+                <aside class="overview__right">
+                    <img src="/images/Play Button.svg" alt="Play Button">
+                    <img src="/images/Video_bg.png" alt="Video_bg">
+                </aside>
+            </section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </div>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>

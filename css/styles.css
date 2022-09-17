@@ -21,13 +21,13 @@ button:active{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .container{
-    width: 75%;
+    width: 77%;
     max-width: 1300px;
     margin: auto;
 }
 
 header{
-    height: 115vh;
+    height: 119vh;
     width: 100%;
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(/images/BgImg.png);
     background-size: cover;
@@ -38,24 +38,32 @@ nav{
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding-top: 55px;
-    padding-left: 12%;
-    padding-right: 14%;
+    padding-top: 43px;
+    padding-left: 11%;
+    padding-right: 12%;
     font-size: 12px;
     text-transform:uppercase;
 }
 
-.list__item{
+
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/* .list__item{
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
-}
+} */
 
 .list__item-text{
     text-decoration: none;
     color: #fff;
     font-weight: lighter;
     transition: 0.5s ease-in;
+    margin: 0 9px;
 }
 .list__item-text_default{
     font-weight: bold;
@@ -65,13 +73,18 @@ nav{
     color: black;
 }
 
+.nav__user-set{
+    display: flex;
+}
 .nav__btn-switch{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .nav__btn-switch img{
     margin-right: 10%;
+    width: 35%;
 }
 
 
@@ -102,20 +115,20 @@ nav{
 
 .hero__name{
     font-weight: bold;
-    font-size: 79px;
+    font-size: 66px;
     text-transform: uppercase;
     letter-spacing: 5%;
 }
 
 .hero__desc {
-    font-size: 25px;
-    margin: 40px 0 58px 0;
+    font-size: 21px;
+    margin: 30px 0 50px 0;
     font-weight: 100;
     line-height: 150%;
   }
   
 .hero__btn {
-padding: 17px 55px;
+padding: 13px 42px;
 border-color: white;
 background-color: #fff;
 color: #ed4c5c;
@@ -134,17 +147,18 @@ color: #ed4c5c;
 }
 .overview__left{
     width: 50%;
-    margin: 140px 0;
+    margin: 125px 0;
 }
 
 .overview__left-name{
-    font-size: 36px;
-    margin-bottom: 50px;
+    font-size: 29px;
+    margin-bottom: 48px;
 }
 
 .overview__left-decs{
-    font-size: 14px;
+    font-size: 12.5px;
     margin-bottom: 25px;
+
 }
 
 .overview__left-link{
@@ -164,7 +178,7 @@ color: #ed4c5c;
 }
 
 .overview__right-play{
-    left: 7%;
+    left: 8%;
     position: relative;
     width: 66px;
     transition: 0.7s;
@@ -181,24 +195,67 @@ color: #ed4c5c;
 }
 
 .overview__right-video{
-    width: 445px;
-    height: 310px;
-    margin: 95px 95px 95px 0;
+    width: 415px;
+    height: 275px;
+    margin: 80px 255px 95px 0;
 }
 
 /* -------------   Features   ------------ */
 
 #features{
-    background-color: #e08f8f;
+    background-color: #fafafa;
 }
 
+.section__name{
+    text-align: center;
+    padding: 30px 0 65px 0;
+    font-size: 30px;
+}
 .features__list{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.list__item{
+    list-style-type: none;
 }
 
 .card__img{
-    width: 350px;
-    height: 250px;
+    width: 30s0px;
+    height: 220px;
 }
+
+.card__info{
+    text-align: center;
+    background-color: #fff;
+    transform: translate(9%, -50%);
+    padding: 15px 10px;
+    width: 84%;
+    border-radius: 8px;
+    box-shadow: 0 1px 30px 0 rgba(0,0,0,0.24);
+    /* width: 84%;
+    height: ; */
+}
+
+.card__name{
+    font-size: 14px;
+    margin: 20px;
+}
+
+.card__desc ,.card__link{
+    font-size: 11px;
+    margin: 20px;
+}
+
+.card__link{
+    font-weight: bold;
+    color: #ED4C5C;
+    transition: 0.4s ease-in-out;
+}
+
+.card__link:hover{
+    font-size: 12px;
+    color: #8e1c27;
+}
+
 

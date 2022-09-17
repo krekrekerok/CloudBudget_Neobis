@@ -8,9 +8,9 @@
     <title>CloudBudget-Freebie</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <!-- <div class="container"> -->
-            <nav class="nav">
+            <nav class="nav sticky">
                 <a href="#" class="nav__logo">
                     <img class="nav__logo" src="/images/logo.svg" alt="logo">
                 </a>
@@ -42,14 +42,15 @@
                         </a>
                     </li>
                 </ul>
-
-                <div class="nav__btn-switch">
-                    <img class="switch__item" src="/images/Flag.svg" alt="En Flag">
-                    <p class="switch__item switch-text">en</p>
-                    <img src="/images/Arrow.svg" alt="Arrow" class="switch__item">
+                <div class="nav__user-set">
+                    <div class="nav__btn-switch">
+                        <img class="switch__item" src="/images/Flag.svg" alt="En Flag">
+                        <p class="switch__item switch-text">en</p>
+                        <img src="/images/Arrow.svg" alt="Arrow" class="switch__item">
+                    </div>
+    
+                    <button class="nav__btn-login">Login</button>
                 </div>
-
-                <button class="nav__btn-login">Login</button>
 
             </nav>
             <section class="hero">
@@ -88,16 +89,19 @@
             </section>
             <section id="features" >
                 <div class="container features">
+                    <h2 class="section__name">Features</h2>
                     <ul class="features__list">
                         <li class="list__item">
                             <article class="features__card">
                                 <img src="images/features-1.png" alt="Support" class="card__img">
                                 <div class="card__info">
                                     <h3 class="card__name">
+                                        Supports All Currencies and <br> Cards
                                     </h3>
-                                    <p class="card__decs">
+                                    <p class="card__desc">
+                                        We support all popular currencies and is <br> fully customizable to add
                                     </p>
-                                    <a href="" class="card__link">Read More</a>
+                                    <a href="#header" class="card__link">Read More</a>
                                 </div>
                             </article>
                         </li>
@@ -106,10 +110,12 @@
                                 <img src="images/features-2.png" alt="Support" class="card__img">
                                 <div class="card__info">
                                     <h3 class="card__name">
+                                        Manage your expenses on <br> the go
                                     </h3>
-                                    <p class="card__decs">
+                                    <p class="card__desc">
+                                        You can access your account from <br> anywhere in the world on any device
                                     </p>
-                                    <a href="" class="card__link">Read More</a>
+                                    <a href="#header" class="card__link">Read More</a>
                                 </div>
                             </article>
                         </li>
@@ -118,17 +124,21 @@
                                 <img src="images/features-3.png" alt="Support" class="card__img">
                                 <div class="card__info">
                                     <h3 class="card__name">
+                                        Cloud Budget Management <br> Software
                                     </h3>
-                                    <p class="card__decs">
+                                    <p class="card__desc">
+                                        Our software is made so you can access <br> and manage your budget
                                     </p>
-                                    <a href="" class="card__link">Read More</a>
+                                    <a href="#header" class="card__link">Read More</a>
                                 </div>
                             </article>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section></section>
+            <section id="Technology">
+
+            </section>
             <section></section>
             <section></section>
         <!-- </div> -->

@@ -1,7 +1,9 @@
 *{
     font-family: 'Lato', sans-serif;
     margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 a{
@@ -25,57 +27,58 @@ button:active{
 }
 
 header{
-    height: 100%;
-    /* height: 700px; */
-    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(/images/BgImg.png) center center no-repeat;
+    height: 115vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(/images/BgImg.png);
     background-size: cover;
-    object-fit: contain;
+    background-position: center top;
 }
 nav{
-    padding-top: 45px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     color: white;
+    padding-top: 55px;
+    padding-left: 12%;
+    padding-right: 14%;
     font-size: 12px;
     text-transform:uppercase;
 }
 
-.nav__list{
-    list-style: none;
-    display: flex;
-    margin: auto 0;
-    padding: 0;
+.list__item{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
-.nav__item{
-    padding: 2px 11px;
+.list__item-text{
+    text-decoration: none;
     color: #fff;
-    /* transition: 0.5s ease-in; */
+    font-weight: lighter;
+    transition: 0.5s ease-in;
+}
+.list__item-text_default{
+    font-weight: bold;
 }
 
-.nav__item:hover{
-    font-weight: 600;
+.list__item-text:hover{
+    color: black;
 }
 
 .nav__btn-switch{
     display: flex;
+    align-items: center;
 }
 
-.switch__item{
-    margin-right: 11px;
-}
-img.switch__item{
-    width: 32px;
+.nav__btn-switch img{
+    margin-right: 10%;
 }
 
-.switch-text{
-    margin: auto;
-}
 
 .nav__btn-login{
     font-size: inherit;
     background-color: inherit;
-    padding: 10px 25px;
+    padding: 10px 26px;
     color: white;
     border-color: white;
 }
@@ -99,23 +102,24 @@ img.switch__item{
 
 .hero__name{
     font-weight: bold;
-    font-size: 66px;
+    font-size: 79px;
     text-transform: uppercase;
     letter-spacing: 5%;
 }
 
-.hero__desc{
-    margin: 40px 0;
+.hero__desc {
+    font-size: 25px;
+    margin: 40px 0 58px 0;
     font-weight: 100;
     line-height: 150%;
-}
-
-.hero__btn{
-    padding: 17px 50px;
-    border-color: white;
-    background-color: #fff;
-    color:#ED4C5C;
-    margin-bottom: 150px;
+  }
+  
+.hero__btn {
+padding: 17px 55px;
+border-color: white;
+background-color: #fff;
+color: #ed4c5c;
+/* margin-bottom: 300px; */
 }
 
 .hero__btn:hover{

@@ -32,11 +32,12 @@ ul{
 }
 
 header{
-    height: 119vh;
+    height: 100vh;
     width: 100%;
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../images/BgImg.png");
     background-size: cover;
     background-position: center top;
+    background-repeat: no-repeat;
 }
 nav{
     display: flex;
@@ -114,7 +115,7 @@ nav ul{
 
 .hero{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     color: #fff;
 }
 
@@ -413,3 +414,266 @@ footer{
     cursor: pointer;
     transform:scale(1.2)
 }
+
+
+
+
+/* --------  Queries  -------- */
+
+@media screen and (max-width: 1220px) {
+    .hero{
+        margin-top: 50px;
+    }
+    
+    .hero__name{
+        font-size: 45px;
+    }
+    
+    .hero__desc {
+        font-size: 13px;
+      }
+      
+    .hero__btn {
+    padding: 10px 32px;
+    }
+
+
+    .card__img{
+        width: 250px;
+        height: 160px;
+    }
+    
+    .card__info{
+
+        transform: translate(5%, -50%);
+        width: 90%;
+    }
+    
+    .card__name{
+        margin: 0;
+        font-size: 11px;
+    }
+    
+    .card__desc ,.card__link{
+        font-size: 10px;
+    }
+    
+    .card__link:hover{
+        font-size: 12px;
+        color: #8e1c27;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 1040px){
+    
+    .list__item-text{
+        font-size: 12px;
+    }
+    .nav__btn-switch{
+        display: none
+    }
+    
+    
+    .nav__btn-login{
+        padding: 10px 20px;
+    }
+    
+    .nav__btn-login:hover {
+        transform:scale(0.6)
+    }
+    
+    .hero{
+        margin-top: 70px;
+    }
+    
+    .hero__name{
+        font-size: 50px;
+    }
+    
+    .hero__desc {
+        font-size: 14px;
+      }
+      
+    .hero__btn {
+    padding: 13px 42px;
+    }
+    
+    .hero__btn:hover{
+        transform:scale(0.6)
+    }
+    .section__left{
+        width: 50%;
+        margin: 10% 0;
+    }
+    
+    .section__left-name{
+        font-size: 24px;
+        margin:5% 0;
+    }
+    
+    .section__left-decs{
+        font-size: 11px;
+        margin-bottom: 5%;
+    
+    }
+    
+    .overview__left-link{
+        font-size: 11px;
+    }
+    
+    .overview__left-link:hover{
+        font-size: 12px;
+    }
+    
+    .overview__right{
+        width: 50%;
+        display: flex;
+    }
+    
+    .overview__right-play{
+        left: 50%;
+        position: relative;
+        width: 25%;
+    }
+    
+    .section__right-video{
+        width: 350px;
+        height: 200px;
+    }
+
+    .card__img{
+        width: 230px;
+        height: 150px;
+    }
+    
+    .card__info{
+        transform: translate(10%, -50%);
+        width: 80%;
+    }
+    
+    .card__name{
+        font-size: 11px;
+        margin: 0;
+    }
+    
+    .card__desc ,.card__link{
+        font-size: 10px;
+    }
+    
+    .card__link:hover{
+        font-size: 12px;
+        color: #8e1c27;
+    }
+
+    input, select{
+        padding: 8px;
+      }
+
+    .contact__btn{
+    padding: 10px 15px;}
+    
+  }
+
+
+  @media screen and (max-width: 950px){
+    .card__img{
+        width: 200px;
+        height: 150px;
+    }
+    .card__info{
+        padding: 2%;
+        transform: translate(20%, -50%);
+        width: 70%;
+    }
+    
+    .card__name{
+        font-size: 10px;
+        margin: 5% 0;
+    }
+    
+    .card__desc ,.card__link{
+        margin: 5% 0;
+        font-size: 10px;
+    }
+    
+    .card__link:hover{
+        font-size: 12px;
+        color: #8e1c27;
+    }
+
+    header{
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .list__item-text{
+        display: none
+    }
+    
+    .hero{
+        margin-top: 50px;
+    }
+    
+    .hero__name{
+        font-size: 40px;
+    }
+    
+    .hero__desc {
+        font-size: 12px;
+      }
+      
+    .hero__btn {
+    padding: 10px 25px;
+    }
+    
+    .hero__btn:hover{
+        transform:scale(0.6)
+    }
+    .overview__right-play{
+        left: 40%;
+        position: relative;
+        width: 15%;
+    }
+    
+    .section__right-video{
+        width: 300px;
+        height: 150px;
+    }
+  }
+
+
+  @media screen and (max-width: 800px){
+
+
+    .features__list{
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .card__img{
+        width: 200px;
+        height: 150px;
+    }
+    .card__info{
+        padding: 2%;
+        transform: translate(20%, -50%);
+        width: 70%;
+    }
+    
+    .card__name{
+        font-size: 10px;
+        margin: 5% 0;
+    }
+    
+    .card__desc ,.card__link{
+        margin: 5% 0;
+        font-size: 10px;
+    }
+    
+    .card__link:hover{
+        font-size: 12px;
+        color: #8e1c27;
+    }
+  }
